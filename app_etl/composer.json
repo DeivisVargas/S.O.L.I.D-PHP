@@ -1,0 +1,15 @@
+{
+    "name": "deivi/app_etl",
+    "description": "Deivis Vargas",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deivis Vargas"
+        }
+    ],
+    "require": {}
+}
