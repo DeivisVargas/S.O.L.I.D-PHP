@@ -47,22 +47,17 @@ class Leitor
 
     public function lerArquivo(){
         $caminho = $this->getDiretorio().'/'.$this->getArquivos();
+        $arquivo = new Arquivo();
+
         $extensao = explode('.', $this->getArquivos());
-        //$arquivo = new Arquivo();
+        if($extensao[1] == 'csv'){
+            $arquivo->lerArquivoCsv($caminho);
+        }
+        if($extensao[1] == 'txt'){
+            $arquivo->lerArquivoTxt($caminho);
+        }
 
-        $classe = $extensao[1] ;
-        $classe = '\src\extrator\\'.ucfirst($classe);
-
-        return call_user_func(
-            [
-                new $classe,
-                'lerArquivo'
-            ],
-            [
-                $caminho
-            ]
-        );
-
+        return $arquivo->getDados();
     }
 
 }
