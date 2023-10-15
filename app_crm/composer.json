@@ -1,0 +1,15 @@
+{
+    "name": "deivi/app_crm",
+    "description": "Segregação de interface",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deivis Vargas"
+        }
+    ],
+    "require": {}
+}
