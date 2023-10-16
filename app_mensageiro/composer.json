@@ -1,10 +1,9 @@
 {
-    "name": "deivi/app_carrinho_compras",
-    "type": "project",
+    "name": "deivi/app_mensageiro",
+    "description": "Principio da inversão de dependência",
     "autoload": {
-
         "psr-4": {
-            "App\\": "src/"
+            "src\\": "src/"
         }
     },
     "authors": [
@@ -13,6 +12,4 @@
         }
     ],
     "require": {}
-
 }
-
